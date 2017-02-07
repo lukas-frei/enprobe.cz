@@ -1,0 +1,237 @@
+/* ------------ basic setup ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(165, 183, 209, 0.5);
+  background-image: url("../assets/hatch.png");
+  background-size: 100px 100px;
+}
+
+#obsah {
+  max-width: 775px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 8px;
+  margin: 60px auto;
+}
+
+section,
+footer {
+  padding: 80px;
+}
+
+/* ------------ font ------------- */
+body {
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2em;
+  color: #222933;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+h2 {
+  line-height: 1.8em;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+a {
+  color: #7192C1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #222933;
+  text-decoration: underline;
+}
+
+/* ------------ sluzby ------------- */
+#sluzby {
+  background-color: white;
+}
+
+.logo {
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  float: right;
+  margin: -55px -40px;
+  font-size: 24px;
+}
+
+.lead-text {
+  text-align: justify;
+}
+
+.lead-text span {
+  font-weight: 500;
+}
+
+/* ------------ projekty ------------- */
+#projekty {
+  background-color: #7192C1;
+  color: white;
+  font-weight: 400;
+}
+
+#projekty > div {
+  padding-bottom: 30px;
+}
+
+#projekty > div:last-child {
+  padding-bottom: 0;
+}
+
+.point {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 10px 0 0;
+}
+
+.projekt {
+  display: inline-block;
+}
+
+.br-mobile {
+  display: none;
+}
+
+/* ------------ kontakt ------------- */
+#kontakt {
+  background-color: white;
+  padding: 80px 95px;
+}
+
+.otazka {
+  padding-bottom: 10px;
+}
+
+.otazka > p {
+  display: inline-block;
+}
+
+.kontakty {
+  margin-top: 40px;
+}
+
+.portret {
+  width: 55%;
+  margin-right: 4%;
+  border: solid 3px #7192C1;
+  box-shadow: 1px 1px 4px #4A4A4A;
+}
+
+.kontakty > div {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+.kontakty > div > a:first-of-type {
+  display: block;
+  margin-top: 10px;
+}
+
+.kontakty > div > p:last-child {
+  padding-top: 30px;
+}
+
+/* ------------ footer ------------- */
+footer {
+  background-color: #7192C1;
+}
+
+.logo-white {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------ media query ------------- */
+@media (max-width: 800px) {
+  #obsah {
+    max-width: 100%;
+    margin: 0;
+  }
+  section,
+  footer,
+  #kontakt {
+    padding: 10%;
+  }
+  .logo,
+  .logo-white {
+    width: 60%;
+  }
+  .btn {
+    margin: -10% -10%;
+  }
+  .point {
+    margin: 10px 5px 0 0;
+  }
+  .projekt {
+    width: 90%;
+  }
+  .otazka > p {
+    width: 88%;
+  }
+}
+
+@media (max-width: 604px) {
+  section,
+  footer,
+  #kontakt {
+    padding: 10% 5%;
+  }
+  #sluzby {
+    font-size: 16px;
+    line-height: 2em;
+  }
+  .logo {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .btn {
+    margin: -8% 0;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .br-mobile {
+    display: inline;
+  }
+  .kontakty {
+    margin-top: 30px;
+  }
+  .portret {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .kontakty > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .tel-link {
+    pointer-events: none;
+    font-weight: 500;
+    color: #222933;
+  }
+}
