@@ -19,16 +19,23 @@ section,
 footer
   padding: 80px
 
+#projekty,
+#kontakt
+  padding: 70px 90px
+
 /* ------------ font ------------- */
 
 body
   font-family: roboto, sans-serif
   font-size: 18px
-  font-weight: 300
+  font-weight: 400
   line-height: 2em
   color: #222933
   -webkit-font-smoothing: antialiased
   text-rendering: optimizelegibility
+
+h2, h3, .btn
+  font-family: 'Roboto Condensed', sans-serif
 
 h2
   line-height: 1.8em
@@ -38,11 +45,11 @@ h2
 
 h3
   font-size: 20px
-  font-weight: 600
+  font-weight: 700
 
 a
   color: #7192C1
-  font-weight: 600
+  font-weight: 700
   text-decoration: none
   transition: all 0.5s
 
@@ -68,7 +75,7 @@ a:hover
   text-align: justify
 
 .lead-text span
-  font-weight: 500
+  font-weight: 700
 
 
 /* ------------ projekty ------------- */
@@ -76,7 +83,6 @@ a:hover
 #projekty
   background-color: #7192C1
   color: white
-  font-weight: 400
 
 #projekty>div
   padding-bottom: 30px
@@ -100,7 +106,6 @@ a:hover
 
 #kontakt
   background-color: white
-  padding: 80px 95px
 
 .otazka
   padding-bottom: 10px
@@ -117,19 +122,22 @@ a:hover
   border: solid 3px #7192C1
   box-shadow: 1px 1px 4px #4A4A4A
 
-.kontakty>div
+.kontakt
   display: inline-block
   width: 40%
   vertical-align: top
-  padding-top: 10px
 
-.kontakty>div>a:first-of-type
+.kontakt h3
+  margin-top: 25px
+  margin-bottom: -5px
+  font-family: roboto, sans-serif
+
+.kontakt p
+  margin-bottom: 10px
+  font-size: 17px
+
+.kontakt a
   display: block
-  margin-top: 10px
-
-.kontakty>div>p:last-child
-  padding-top: 30px
-
 
 /* ------------ footer ------------- */
 
@@ -140,6 +148,11 @@ footer
   width: 300px
   display: block
   margin: 0 auto
+
+footer p
+  color: white
+  text-align: center
+  padding-top: 30px
 
 
 /* ------------ media query ------------- */
@@ -167,10 +180,11 @@ footer
   .otazka>p
     width: 88%
 
-@media (max-width: 604px)
+@media (max-width: 701px)
 
   section,
   footer,
+  #projekty,
   #kontakt
     padding: 10% 5%
 
@@ -184,7 +198,10 @@ footer
     margin: -8% 0
     font-size: 20px
 
-@media (max-width: 500px)
+  .kontakt h3
+    margin-top: 10px
+
+@media (max-width: 570px)
 
   .br-mobile
     display: inline
@@ -194,13 +211,15 @@ footer
   .portret
     width: 90%
     margin-left: 5%
-  .kontakty>div
+  .kontakt
     width: 100%
     text-align: center
+  .kontakt h3
+    margin-top: 25px
 
 @media (min-width: 800px)
 
   .tel-link
     pointer-events: none
-    font-weight: 500
+    font-weight: 400
     color: #222933
